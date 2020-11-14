@@ -26,7 +26,7 @@ Although there are a fair number of data points at all levels of wealth and educ
 
 ### Two types of probability density plots: Kernel density estimation (KDE) and stacked histogram
 Kernel density plots smooth the data with a Gaussian kernel in order to produce a single continuous density estimate, and easily allowing the user to see where data is most concentrated. 
-The stacked histogram emphasizes the part-whole relationships of the variables, which are vital to consider from a sociological perspective.
+The stacked histogram emphasizes the part-whole relationships of the variables, which are vital to consider when analyzing data from a sociological perspective.
 
 These plots provides an interesting view of the relationship between gender and education in Liberia.  
 ![edu_gender_density_plot](https://user-images.githubusercontent.com/58756714/99140329-f4990a00-260e-11eb-827d-b5c3f019ad22.png)
@@ -37,37 +37,6 @@ Making the assumption that within the data, gender 1 represents men and gender 2
 ![edwealthkde](https://user-images.githubusercontent.com/58756714/99140737-7474a380-2612-11eb-8e38-62cb1ec688a1.png)
 ![education_wealth_prob](https://user-images.githubusercontent.com/58756714/99140568-f794fa00-2610-11eb-9f05-06b45b46067c.png)
 
-Examining these plots, we can see that there is a very small number of highly educated, wealthy persons living in Liberia, and that very wealthy people are generally very highly educated, although very well educated people are not necessarily particularly wealthy.
+Examining the KDE plot, we again see that the data is skewed right, as it is concentrated at lower levels of education.  It's critical to note that at low levels of wealth, a lack of education is the norm, even though more educated people are not necessarily more wealthy.  We can also see that achieving wealth does not necessesitate high levels of education, as extremely wealthy people are about evenly spread across all education levels.
 
-You can use the [editor on GitHub](https://github.com/chelsea-rowell/LiberiaExtraCredit/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/chelsea-rowell/LiberiaExtraCredit/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+We can see in the stacked histogram that there is a very small number of highly educated, wealthy persons living in Liberia, and that extremely well educated people are also genereally wealthy. This suggests that high levels of education are only readily available for those who are already richer than their compatriots, which almost certainly has a negative impact on Liberian class mobility.  
