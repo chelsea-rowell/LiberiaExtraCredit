@@ -44,23 +44,14 @@ We can see in the stacked histogram that there is a very small number of highly 
 # What kinds of models can most successfully predict education levels?
 
 | Model | Accuracy |
-
 | ----------- | ----------- |
-
 | Logistic regression on raw data| 0.563|
-
 | Logistic regression with standard scaler | 0.585|
-
 | Logistic regression with MinMax scaler | 0.585 |
-
 | Logistic regression with Robust scaler | 0.585 |
-
 | Logistic regression with Normalizer | 0.557 |
-
 | kNN | 0.690 |
-
 | **Decision Tree**| **0.707** |
-
 | Random Forest | 0.701 |   
 
 
