@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+# Predicting education levels in Liberia based on age, gender, wealth, size, and location
+
+## Overview of data
 
 You can use the [editor on GitHub](https://github.com/chelsea-rowell/LiberiaExtraCredit/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
