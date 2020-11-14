@@ -40,3 +40,31 @@ Making the assumption that within the data, gender 1 represents men and gender 2
 Examining the KDE plot, we again see that the data is skewed right, as it is concentrated at lower levels of education.  It's critical to note that at low levels of wealth, a lack of education is the norm, even though more educated people are not necessarily more wealthy.  We can also see that achieving wealth does not necessesitate high levels of education, as extremely wealthy people are about evenly spread across all education levels.
 
 We can see in the stacked histogram that there is a very small number of highly educated, wealthy persons living in Liberia, and that extremely well educated people are also genereally wealthy. This suggests that high levels of education are only readily available for those who are already richer than their compatriots, which almost certainly has a negative impact on Liberian class mobility.  
+
+# What kinds of models can most successfully predict education levels?
+| Model | Accuracy |                                          
+| ----------- | ----------- |
+| Logistic regression on raw data| 0.563|
+| Logistic regression with standard scaler | 0.585|
+| Logistic regression with MinMax scaler | 0.585 |
+| Logistic regression with Robust scaler | 0.585 |
+| Logistic regression with Normalizer | 0.557 |
+| kNN | 0.690 |
+| **Decision Tree**| **0.707** |
+| Random Forest | 0.701 |   
+
+It is clear that the Decision Tree model is the most effective at predicting education levels, with an accuracy of 70.1%. Since this model is predicting human behavior, rather than modeling a more easily quantifiable concept such as the species of an iris or the malignancy of a tumor, 70.1% accuracy is pretty good!  
+
+## Logistic regression
+I was able to achieve a maximum accuracy of 58.5% on testing data with logistic regression, using a Standard Scaler to standardize the data. On the raw, unscaled data, along with data scaled using MinMax, Robust, and Normalizer, my accuracy was only slightly lower.  
+
+## kNN
+The kNN model was dramatically better than logistic regression, increasing in accuracy by more than 10%.  Clearly, kNN is superior to regression in this case.  
+![knnOUTPUT](https://user-images.githubusercontent.com/58756714/99143262-16ec5100-262a-11eb-80ec-ca7b0c989481.png)
+
+Here, I determined that the optimal value for k was 17, in order to maximize accuracy while maintaining the simplicity of the model.  
+## Decision Tree and Random Forest
+My decision tree model was the most effective of all of the models that I tested, with an accuracy of 70.7%. Random Forest came in at a close second, with an accuracy of 70.1%.    
+![DTpic](https://user-images.githubusercontent.com/58756714/99143261-1653ba80-262a-11eb-8063-334e10e8b226.png)
+
+I determined that the optimal level for the maximum depth of the decision tree was 5, so as not to overfit the model.  
