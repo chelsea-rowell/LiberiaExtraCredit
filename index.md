@@ -42,7 +42,8 @@ Examining the KDE plot, we again see that the data is skewed right, as it is con
 We can see in the stacked histogram that there is a very small number of highly educated, wealthy persons living in Liberia, and that extremely well educated people are also genereally wealthy. This suggests that high levels of education are only readily available for those who are already richer than their compatriots, which almost certainly has a negative impact on Liberian class mobility.  
 
 # What kinds of models can most successfully predict education levels?
-| Model | Accuracy |                                          
+
+| Model | Accuracy |
 | ----------- | ----------- |
 | Logistic regression on raw data| 0.563|
 | Logistic regression with standard scaler | 0.585|
@@ -52,6 +53,7 @@ We can see in the stacked histogram that there is a very small number of highly 
 | kNN | 0.690 |
 | **Decision Tree**| **0.707** |
 | Random Forest | 0.701 |   
+
 
 It is clear that the Decision Tree model is the most effective at predicting education levels, with an accuracy of 70.1%. Since this model is predicting human behavior, rather than modeling a more easily quantifiable concept such as the species of an iris or the malignancy of a tumor, 70.1% accuracy is pretty good!  
 
